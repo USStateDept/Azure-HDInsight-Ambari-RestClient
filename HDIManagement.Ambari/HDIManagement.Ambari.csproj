@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="SwaggerHub2\**" />
+    <Compile Remove="SwaggerHub\src\IO.Swagger.Test\**" />
+    <EmbeddedResource Remove="SwaggerHub2\**" />
+    <EmbeddedResource Remove="SwaggerHub\src\IO.Swagger.Test\**" />
+    <None Remove="SwaggerHub2\**" />
+    <None Remove="SwaggerHub\src\IO.Swagger.Test\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="RestSharp" Version="106.11.4" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
+    <PackageReference Include="System.Runtime.Serialization.Primitives" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="swagger.partial.cs">
+      <DesignTime>false</DesignTime>
+      <AutoGen>False</AutoGen>
+      <DependentUpon>swagger.json</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>

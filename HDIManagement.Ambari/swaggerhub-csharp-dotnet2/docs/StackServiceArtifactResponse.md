@@ -1,0 +1,10 @@
+# IO.Swagger.Model.StackServiceArtifactResponse
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Artifacts** | [**Artifacts**](Artifacts.md) |  | [optional] 
+**ArtifactData** | **Dictionary&lt;string, Object&gt;** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
